@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--Metadata Information-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Search GitHub repos.">
+        <title>GitHub Repo API</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div>
+            <h1>GitHub Repo Search</h1>
+
+            <!--Search Form-->
+            <form>
+                <label for="user-name">User Name</label>
+                <input type="text" name="user-name" id="js-user-name" required>
+                <input type="submit" value="Search!">
+            </form>
+
+            <!--Error Message Will Be Displayed Here-->
+            <p id="js-error-message" class="error-message"></p>
+            
+            <!--Results Will Be Displayed Here-->
+            <section class="results hidden">
+                <h2>User Repos</h2>
+                <ul id="results-list"></ul>
+            </section>
+        </div>
+
+        <!--JavaScript FileLinks-->
+        <script src="index.js"></script>
+    </body>
+</html>
